@@ -5,14 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Santhosh M | Senior DevOps Engineer</title>
   <meta name="description" content="Portfolio of Santhosh M, Senior DevOps Engineer specializing in AWS, CI/CD, containers, observability, and AI automation with LLMs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Background decorative blobs -->
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+  <div class="bg-blob bg-blob-3"></div>
+
   <header class="site-header">
     <div class="container header-content">
       <div>
         <h1 class="logo">Santhosh M</h1>
-        <p class="tagline">Senior DevOps Engineer · AWS | CI/CD | Containers | Observability | LLM Automation</p>
+        <p class="tagline">Senior DevOps Engineer · AWS · CI/CD · Containers · Observability · LLM Automation</p>
       </div>
       <nav>
         <ul class="nav">
@@ -29,26 +37,45 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="container hero-content">
-        <div>
-          <p class="hero-kicker">Hello, I’m</p>
-          <h2 class="hero-title">Santhosh M</h2>
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <p class="hero-pill">Available for DevOps / SRE roles</p>
+          <h2 class="hero-title">Building reliable, observable,<br />and self‑healing systems.</h2>
           <p class="hero-subtitle">
-            Senior DevOps Engineer with 5+ years of experience designing and automating AWS cloud infrastructure,
-            CI/CD pipelines, containerized microservices, and observability platforms.
+            I’m a Senior DevOps Engineer specializing in AWS, CI/CD, containers, observability, and AI‑driven automation
+            with Python and LLMs. I help teams ship faster, safer, and with better visibility.
           </p>
           <div class="hero-actions">
-            <a href="#projects" class="btn primary">View Projects</a>
-            <a href="#contact" class="btn secondary">Contact Me</a>
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+          <div class="hero-meta">
+            <span>5+ years experience</span>
+            <span>Chennai, India</span>
+            <span>AWS · Jenkins · Kubernetes · Prometheus</span>
           </div>
         </div>
-        <div class="hero-highlight">
-          <h3>Current Focus</h3>
-          <ul>
-            <li>Self-healing infrastructure for middleware (Redis, RabbitMQ, Kafka, Zookeeper)</li>
-            <li>LLM-powered log analysis and incident remediation</li>
-            <li>Cost-effective, observable AWS workloads</li>
-          </ul>
+        <div class="hero-right">
+          <div class="hero-card glass">
+            <div class="hero-badge">Live systems I've worked on</div>
+            <ul class="hero-stats">
+              <li>
+                <span class="stat-label">Prod clusters</span>
+                <span class="stat-value">10+</span>
+              </li>
+              <li>
+                <span class="stat-label">Pipelines</span>
+                <span class="stat-value">40+ CI/CD</span>
+              </li>
+              <li>
+                <span class="stat-label">Incidents automated</span>
+                <span class="stat-value">30–40%↓ MTTR</span>
+              </li>
+            </ul>
+            <p class="hero-note">
+              Focused on self‑healing middleware, LLM‑assisted log analysis, and cost‑efficient, observable AWS workloads.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -57,15 +84,18 @@
     <section id="about" class="section">
       <div class="container">
         <h2 class="section-title">About</h2>
-        <p>
-          I am a Senior DevOps Engineer based in Chennai, India, focused on building reliable, observable,
-          and automated cloud infrastructure. I work primarily on AWS, designing VPCs, ECS-based microservices,
-          CI/CD pipelines with Jenkins, and monitoring stacks using Prometheus, Grafana, and CloudWatch.
-        </p>
-        <p>
-          Recently, I have been integrating Python and large language models (LLMs) into operational workflows to
-          automate log analysis, incident triage, and remediation tasks—turning manual runbooks into self-healing systems.
-        </p>
+        <div class="section-content two-col">
+          <p>
+            I am a Senior DevOps Engineer based in Chennai, India, focused on building reliable, observable, and automated
+            cloud infrastructure. I work primarily on AWS, designing VPCs, ECS‑based microservices, CI/CD pipelines with
+            Jenkins, and monitoring stacks using Prometheus, Grafana, and CloudWatch.
+          </p>
+          <p>
+            Recently, I have been integrating Python and large language models (LLMs) into operational workflows to automate
+            log analysis, incident triage, and remediation tasks—turning manual runbooks into self‑healing systems and
+            freeing engineers to focus on higher‑impact work.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -73,46 +103,46 @@
     <section id="experience" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item glass">
+            <header class="timeline-header">
+              <div>
+                <h3>Senior Engineer – DevOps</h3>
+                <p class="company">D4Insight Private Limited · Chennai, India</p>
+              </div>
+              <span class="time">Oct 2023 – Present</span>
+            </header>
+            <ul class="timeline-body">
+              <li>Spearheaded AWS cloud infrastructure setup focusing on security, scalability, and automation across production and non‑production environments.</li>
+              <li>Managed releases across environments, automating CI/CD pipelines with Jenkins (pipeline jobs) for multiple technology stacks.</li>
+              <li>Built Python scripts integrated with LLMs to automate operational tasks and incident analysis, reducing manual effort.</li>
+              <li>Configured IAM policies, role‑based access, MFA, and AWS Organizations for secure multi‑account setups.</li>
+              <li>Deployed and optimized AWS ECS services for microservices‑based applications, improving performance and reliability.</li>
+              <li>Implemented centralized logging using OpenSearch (Elasticsearch, Logstash, Kibana) and event streaming with Kafka and Zookeeper.</li>
+              <li>Monitored applications via CloudWatch, Prometheus, and Grafana, creating custom Jenkins jobs for infra monitoring and deployment automation.</li>
+            </ul>
+          </article>
 
-        <article class="experience-item">
-          <header>
-            <h3>Senior Engineer - DevOps</h3>
-            <div class="exp-meta">
-              <span>D4Insight Private Limited</span>
-              <span>Oct 2023 – Present · Chennai, India</span>
-            </div>
-          </header>
-          <ul>
-            <li>Spearheaded AWS cloud infrastructure setup focusing on security, scalability, and automation across production and non-production environments.</li>
-            <li>Managed releases across environments, automating CI/CD pipelines with Jenkins (pipeline jobs) for multiple technology stacks.</li>
-            <li>Built Python scripts integrated with LLMs to automate operational tasks and incident analysis, reducing manual effort.</li>
-            <li>Configured and managed IAM policies, role-based access, MFA, and AWS Organizations for secure multi-account setups.</li>
-            <li>Deployed and optimized AWS ECS services for microservices-based applications, improving performance and reliability.</li>
-            <li>Integrated AWS Lambda for serverless automation and disaster-recovery workflows for production workloads.</li>
-            <li>Implemented centralized logging using OpenSearch (Elasticsearch, Logstash, Kibana) and event streaming with Kafka and Zookeeper.</li>
-            <li>Monitored applications via CloudWatch, Prometheus, and Grafana, creating custom Jenkins jobs for infra monitoring and deployment automation.</li>
-          </ul>
-        </article>
-
-        <article class="experience-item">
-          <header>
-            <h3>DevOps Engineer</h3>
-            <div class="exp-meta">
-              <span>Nextazy Solution Private Limited</span>
-              <span>Nov 2020 – Oct 2023 · Chennai, India</span>
-            </div>
-          </header>
-          <ul>
-            <li>Designed and managed AWS cloud infrastructure including VPCs, subnets, route tables, NAT gateways, and security groups.</li>
-            <li>Configured and automated CI/CD pipelines using Jenkins, integrating with Bitbucket and SonarQube for code analysis.</li>
-            <li>Managed ECS clusters for microservices deployment, optimized resource utilization, and automated service restarts.</li>
-            <li>Implemented monitoring and alerting using Prometheus, Grafana, Nagios, and CloudWatch.</li>
-            <li>Managed Docker and Docker Swarm services and deployed Nginx, Apache, and Tomcat for routing and load balancing.</li>
-            <li>Configured RabbitMQ and Redis for reliable message queuing and caching in microservices architectures.</li>
-            <li>Developed Python scripts for AWS ECS task monitoring and automated Microsoft Teams alerts.</li>
-            <li>Configured IAM, AWS Organizations, ELB, Auto Scaling groups, MySQL, MongoDB (Replica Sets), and AWS RDS for high availability.</li>
-          </ul>
-        </article>
+          <article class="timeline-item glass">
+            <header class="timeline-header">
+              <div>
+                <h3>DevOps Engineer</h3>
+                <p class="company">Nextazy Solution Private Limited · Chennai, India</p>
+              </div>
+              <span class="time">Nov 2020 – Oct 2023</span>
+            </header>
+            <ul class="timeline-body">
+              <li>Designed and managed AWS cloud infrastructure including VPCs, subnets, route tables, NAT gateways, and security groups.</li>
+              <li>Configured and automated CI/CD pipelines using Jenkins, integrating with Bitbucket and SonarQube for code analysis.</li>
+              <li>Managed ECS clusters for microservices deployment, optimized resource utilization, and automated service restarts.</li>
+              <li>Implemented monitoring and alerting using Prometheus, Grafana, Nagios, and CloudWatch.</li>
+              <li>Deployed Nginx, Apache, and Tomcat for routing and load balancing in front of microservices.</li>
+              <li>Configured RabbitMQ and Redis for reliable message queuing and caching in microservices architectures.</li>
+              <li>Developed Python scripts for AWS ECS task monitoring and automated Microsoft Teams alerts.</li>
+              <li>Configured IAM, AWS Organizations, ELB, Auto Scaling groups, MySQL, MongoDB (Replica Sets), and AWS RDS for high availability.</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -121,83 +151,89 @@
       <div class="container">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
-          <div class="skill-card">
+          <div class="skill-card glass">
             <h3>Cloud & Infrastructure</h3>
             <p>AWS (VPC, EC2, ECS, RDS, S3, CloudWatch, Lambda, Route 53), GCP (basic).</p>
           </div>
-          <div class="skill-card">
+          <div class="skill-card glass">
             <h3>CI/CD & Automation</h3>
-            <p>Jenkins (pipeline), Git, Bitbucket, SonarQube, Python, Shell scripting, self-healing automation.</p>
+            <p>Jenkins (pipeline), Git, Bitbucket, SonarQube, Python, Shell scripting, self‑healing automation.</p>
           </div>
-          <div class="skill-card">
+          <div class="skill-card glass">
             <h3>Containers & Orchestration</h3>
-            <p>Docker, Docker Swarm, Kubernetes; microservices deployments and rollouts.</p>
+            <p>Docker, Docker Swarm, Kubernetes; microservices deployments, health checks, and rollouts.</p>
           </div>
-          <div class="skill-card">
+          <div class="skill-card glass">
             <h3>Monitoring & Logging</h3>
             <p>Prometheus, Grafana, Nagios, CloudWatch, OpenSearch (Elasticsearch, Logstash, Kibana).</p>
           </div>
-          <div class="skill-card">
+          <div class="skill-card glass">
             <h3>Data & Messaging</h3>
             <p>MySQL, MongoDB (Replica Sets), AWS RDS, Solr, RabbitMQ, Kafka, Zookeeper.</p>
           </div>
-          <div class="skill-card">
+          <div class="skill-card glass">
             <h3>Security & Networking</h3>
             <p>VPC design, security groups, IAM, MFA, AWS Organizations, TLS termination, basic network troubleshooting.</p>
           </div>
-          <div class="skill-card">
+          <div class="skill-card glass">
             <h3>AI & LLM Automation</h3>
-            <p>Python + LLM integration for error-log analysis, incident summarization, and remediation recommendations.</p>
+            <p>Python + LLM integration for error‑log analysis, incident summarization, and remediation recommendations.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects / Portfolio -->
+    <!-- Projects -->
     <section id="projects" class="section section-alt">
       <div class="container">
-        <h2 class="section-title">Featured Work</h2>
+        <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
-          <article class="project-card">
+          <article class="project-card glass">
+            <div class="project-label">Automation</div>
             <h3>LLM‑Powered Error Log Analysis</h3>
             <p>
-              Python-based tool that ingests application and infrastructure logs, uses an LLM to classify issues,
-              generate root-cause hypotheses, and suggest quick fixes. Integrated with CI/CD and chat alerts.
+              Python‑based tool that ingests application and infrastructure logs, uses an LLM to classify issues,
+              generate root‑cause hypotheses, and suggest quick fixes. Integrated with CI/CD and chat alerts.
             </p>
             <ul class="project-meta">
-              <li>Tech: Python, LLM API, AWS CloudWatch Logs, Jenkins, Webhooks</li>
-              <li>Outcome: Reduced manual log triage time and improved mean-time-to-resolution.</li>
+              <li><span>Tech:</span> Python, LLM API, AWS CloudWatch Logs, Jenkins, Webhooks</li>
+              <li><span>Impact:</span> Reduced manual log triage time and improved MTTR.</li>
             </ul>
-            <!-- Replace with your repo link -->
-            <a href="https://github.com/YOUR_GITHUB_USERNAME/llm-log-analyzer" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/llm-log-analyzer" target="_blank" rel="noopener" class="project-link">
+              View on GitHub →
+            </a>
           </article>
 
-          <article class="project-card">
+          <article class="project-card glass">
+            <div class="project-label">Reliability</div>
             <h3>Self‑Healing Middleware Platform</h3>
             <p>
               Automation layer for middleware services such as Redis, RabbitMQ, Kafka, and Zookeeper,
-              continuously monitoring health and triggering auto-recovery workflows on failures.
+              continuously monitoring health and triggering auto‑recovery workflows on failures.
             </p>
             <ul class="project-meta">
-              <li>Tech: Python, Bash, AWS ECS/EC2, Prometheus alerts, Jenkins, Webhooks</li>
-              <li>Outcome: Reduced manual interventions for middleware incidents and improved uptime.</li>
+              <li><span>Tech:</span> Python, Bash, AWS ECS/EC2, Prometheus alerts, Jenkins, Webhooks</li>
+              <li><span>Impact:</span> Reduced manual interventions for middleware incidents and improved uptime.</li>
             </ul>
-            <!-- Replace with your repo link -->
-            <a href="https://github.com/YOUR_GITHUB_USERNAME/self-healing-middleware" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/self-healing-middleware" target="_blank" rel="noopener" class="project-link">
+              View on GitHub →
+            </a>
           </article>
 
-          <article class="project-card">
+          <article class="project-card glass">
+            <div class="project-label">Observability</div>
             <h3>DevOps Observability Stack</h3>
             <p>
-              End-to-end observability stack combining Prometheus, Grafana, and CloudWatch for ECS microservices,
+              End‑to‑end observability stack combining Prometheus, Grafana, and CloudWatch for ECS microservices,
               with dashboards, alerts, and SLO definitions.
             </p>
             <ul class="project-meta">
-              <li>Tech: Prometheus, Grafana, CloudWatch, AWS ECS, Nginx</li>
-              <li>Outcome: Better visibility into deployments, latency, errors, and infrastructure health.</li>
+              <li><span>Tech:</span> Prometheus, Grafana, CloudWatch, AWS ECS, Nginx</li>
+              <li><span>Impact:</span> Improved visibility into deployments, latency, errors, and infra health.</li>
             </ul>
-            <!-- Replace with your repo link -->
-            <a href="https://github.com/YOUR_GITHUB_USERNAME/devops-observability-stack" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/devops-observability-stack" target="_blank" rel="noopener" class="project-link">
+              View on GitHub →
+            </a>
           </article>
         </div>
       </div>
@@ -207,27 +243,27 @@
     <section id="contact" class="section">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-        <p>
-          I’m open to opportunities in DevOps, SRE, and Platform Engineering roles, especially around AWS, observability,
-          and AI-driven automation. The best way to reach me is via email or LinkedIn.
+        <p class="section-intro">
+          I’m open to opportunities in DevOps, SRE, and Platform Engineering—especially around AWS, observability,
+          and AI‑driven automation. The best way to reach me is via email or LinkedIn.
         </p>
         <div class="contact-grid">
-          <div>
+          <div class="glass contact-card">
             <h3>Details</h3>
             <ul class="contact-list">
-              <li><strong>Email:</strong> <a href="mailto:musanthosh1999@gmail.com">musanthosh1999@gmail.com</a></li>
-              <li><strong>Location:</strong> Chennai, India</li>
-              <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/santhosh-murugan-5973401ba" target="_blank" rel="noopener">santhosh-murugan-5973401ba</a></li>
-              <li><strong>GitHub:</strong> <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">github.com/YOUR_GITHUB_USERNAME</a></li>
+              <li><span>Email:</span> <a href="mailto:musanthosh1999@gmail.com">musanthosh1999@gmail.com</a></li>
+              <li><span>Location:</span> Chennai, India</li>
+              <li><span>LinkedIn:</span> <a href="https://linkedin.com/in/santhosh-murugan-5973401ba" target="_blank" rel="noopener">santhosh-murugan-5973401ba</a></li>
+              <li><span>GitHub:</span> <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">github.com/YOUR_GITHUB_USERNAME</a></li>
             </ul>
           </div>
-          <div>
-            <h3>Interests</h3>
+          <div class="glass contact-card">
+            <h3>Focus Areas</h3>
             <ul class="contact-list">
               <li>Cloud infrastructure & automation</li>
               <li>Terraform & Infrastructure as Code (IaC)</li>
               <li>CI/CD pipeline optimization</li>
-              <li>Large-scale cloud migrations</li>
+              <li>Large‑scale cloud migrations</li>
               <li>LLM model deployment & Ops</li>
             </ul>
           </div>
